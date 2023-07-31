@@ -4,7 +4,7 @@ import { ProductCard } from "./ProductCard";
 const HorizantalCard = ({data}) => {
   return (
     <>
-    <div>
+    <div className="-10">
     <ProductCard product={data}/></div>
     </>
   )

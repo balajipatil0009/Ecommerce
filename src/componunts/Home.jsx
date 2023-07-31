@@ -24,16 +24,16 @@ default:{
 
  
   return (
-    <>
+    <div className="max-w-screen bg-white">
     <HorizantalCard data={baby} />
+    <HorizantalCard data={electric}/>
     <HorizantalCard data={electric} />
     <HorizantalCard data={electric} />
     <HorizantalCard data={electric} />
     <HorizantalCard data={electric} />
     <HorizantalCard data={electric} />
     <HorizantalCard data={electric} />
-    <HorizantalCard data={electric} />
-    </>
+    </div>
   )
 }
 

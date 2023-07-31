@@ -1,27 +1,24 @@
-<<<<<<< HEAD
-import { useState } from 'react'
-import Slider from "react-slick"
-import "../node_modules/slick-carousel/slick/slick.css"; 
-import "../node_modules/slick-carousel/slick/slick-theme.css";
 import './App.css'
-
 import Home from './componunts/Home';
+import Cart from './componunts/Cart';
+import { createBrowserRouter, RouterProvider} from "react-router-dom"
 
 function App() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1
-  }
+  const router = createBrowserRouter([
+    {
+      path:"/",
+      element:<Home/>
+     },{
+      path:"/cart",
+      element:<Cart/>
+     }
+])
   return (
     <div>
-         <Home/>   
+         <RouterProvider router={router}  />
     </div>
   )
 }
 
 export default App
-=======
->>>>>>> e618d29afe786eebd0668a3a7826431e477443a1
+
