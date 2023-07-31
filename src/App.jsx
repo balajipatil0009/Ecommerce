@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useState } from 'react'
 import Slider from "react-slick"
 import "../node_modules/slick-carousel/slick/slick.css"; 
@@ -22,3 +23,5 @@ function App() {
 }
 
 export default App
+=======
+>>>>>>> e618d29afe786eebd0668a3a7826431e477443a1
