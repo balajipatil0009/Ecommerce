@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import cartItem from "../assets/images.json";
 import Cartcard from "./Cartcard";
@@ -25,11 +25,26 @@ function Cart() {
     }
   });
 
+  // Id fetched after selecting item in Add to Cart
+  const itemId = 's1';
+  
+  // For checking Id with current database and returning data
+  const [cartData, setCartdata] = useState('');
+  
+  useEffect(()=>{
+
+    cartItem.map((item)=>{
+      if(item.id == itemId){
+        setCartdata(item);
+      }
+    });
+  }, []);  
+
   return (
     <>
-      <Cartcard data = { baby }></Cartcard>
-      <Cartcard data = { baby }></Cartcard>
-      <Cartcard data = { electric }></Cartcard>
+      <Cartcard data = { cartData }></Cartcard>
+      {/* <Cartcard data = { baby }></Cartcard> */}
+      {/* <Cartcard data = { electric }></Cartcard> */}
     </>
   );
 }
