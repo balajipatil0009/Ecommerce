@@ -1,0 +1,8 @@
+#root{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.btn1{
+    transition: all ease 0.5s;
+}

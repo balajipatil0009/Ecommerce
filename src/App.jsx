@@ -3,6 +3,7 @@ import Home from './componunts/Home';
 import Cart from './componunts/Cart';
 import { createBrowserRouter, RouterProvider} from "react-router-dom"
 
+// Url's for pages
 function App() {
   const router = createBrowserRouter([
     {
@@ -13,6 +14,7 @@ function App() {
       element:<Cart/>
      }
 ])
+
   return (
     <div>
          <RouterProvider router={router}  />
