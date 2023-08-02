@@ -4,7 +4,7 @@ import { ProductCard } from "./ProductCard";
 const HorizantalCard = ({data}) => {
   return (
     <>
-    <div className="-10">
+    <div className="flex justify-center w-full">
     <ProductCard product={data}/></div>
     </>
   )

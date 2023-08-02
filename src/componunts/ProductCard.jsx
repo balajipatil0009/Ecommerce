@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
+import './ProductCard.css'
 
 export const ProductCard = ({ product }) => {
   const settings = {
@@ -17,7 +18,7 @@ export const ProductCard = ({ product }) => {
         {product.map((item, index) => (
           <div
             key={index}
-            className="grid h-72 w-52 bg-white text-black grid-rows-3 py-3 px-4"
+            className="grid h-72 w-52 bg-white text-black grid-rows-3 py-3 px-4 border-2"
           >
             <div
               className="border border-black  bg-center bg-cover h-36 mb-6"

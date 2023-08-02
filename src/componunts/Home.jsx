@@ -23,15 +23,15 @@ const Home = () => {
   });
 
   return (
-    <div className="max-w-screen bg-black">
+    <div className="max-w-screen flex flex-col gap-3">
       <HorizantalCard data={baby} />
       <HorizantalCard data={electric} />
+      {/* <HorizantalCard data={electric} />
       <HorizantalCard data={electric} />
       <HorizantalCard data={electric} />
       <HorizantalCard data={electric} />
       <HorizantalCard data={electric} />
-      <HorizantalCard data={electric} />
-      <HorizantalCard data={electric} />
+      <HorizantalCard data={electric} /> */}
     </div>
   );
 };
