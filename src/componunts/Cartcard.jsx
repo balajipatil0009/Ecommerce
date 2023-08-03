@@ -6,7 +6,7 @@ const CartCard = (baby) => {
       <style>
         {`
           .btn1{
-            transition: all ease 0.8s;
+            transition: all ease 0.5s;
           }
         `}
       </style>
