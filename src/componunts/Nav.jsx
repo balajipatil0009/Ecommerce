@@ -46,7 +46,7 @@ const Nav = () => {
 
         <div>
           <ul className="flex gap-4 mt-6 mr-8 text-cyan-50">
-            <li className="border-2 p-1.5 px-5 -mt-2">Login</li>
+            <li className="border-2 p-1 px-6 -mt-1.5">Login</li>
             <li>Become Seller</li>
             <li className="flex">
               More
