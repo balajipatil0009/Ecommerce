@@ -1,6 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 const Login = ()=>{
     return (
-        <div className="flex bg-white absolute z-10 w-[700px] h-[550px] top-1/4 left-1/4 border-2">
+        <div className="flex bg-white absolute z-10 w-[700px] h-[550px] top-[200px] left-1/4">
             <div className=" bg-[url('Login.png')] bg-contain bg-no-repeat text-left p-10 flex flex-col w-[300px] ">
                 <span className="text-4xl font-semibold text-white">Login</span>
                 <span className="text-slate-200 text-md mt-4">Get access to your <br /> Orders,  Wishlist and <br /> Recommendations</span>

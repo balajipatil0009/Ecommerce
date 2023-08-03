@@ -1,4 +1,34 @@
+import React, { useState, useEffect } from "react";
+
+import Login from "./Login";
+
 const Nav = () => {
+  const [showLogin, setShowLogin] = useState(false);
+  const [isBlurred, setIsBlurred] = useState(false);
+
+  const handleLoginClick = () => {
+    setShowLogin(true);
+    setIsBlurred(!isBlurred);
+
+    // const parentElement = document.querySelector(".home");
+    // parentElement.classList.toggle("blur-background");
+  };
+
+  const handleLoginCloseclick = () => {
+    setShowLogin(false);
+    setIsBlurred(false);
+
+  };
+
+  // useEffect(() => {
+  //   const parentElement = document.querySelector('.home');
+  //   if (isBlurred) {
+  //     parentElement.classList.add('blur-background');
+  //   } else {
+  //     parentElement.classList.remove('blur-background');
+  //   }
+  // }, [isBlurred]);
+
   return (
     <>
       <style>
@@ -11,12 +41,22 @@ const Nav = () => {
             transition: all ease-in 0.7s;
           }
 
+          .blur-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            filter: blur(5px); /* Adjust the blur amount as needed */
+            opacity: 0.7; /* Adjust the opacity to control the blur effect */
+          }
+
         `}
       </style>
 
-      {/* <Login/> */}
+      {/* <Login /> */}
 
-      <div className="relative">
+      <div className="opacity-100 relative {isBlurred ? 'blur-background' : ''} ">
         <div className="bg-blue-600 w-full z-50 fixed top-0 flex justify-around left-0">
           <div className="flex justify-center my-2 py-2">
             <div className="w-13 mx-2">
@@ -63,12 +103,26 @@ const Nav = () => {
 
           <div>
             <ul className="flex gap-4 mt-6 mr-8 text-cyan-50">
-              <li className="btn1 cursor-pointer border-2 p-1 px-6 -mt-1.5 hover:bg-white hover:text-blue-600">
-                <a href="/Login">Login</a>
+              {/* For ClickLogin */}
+              <li
+                onClick={handleLoginClick}
+                className="btn1 font-semibold cursor-pointer border-2 p-1 px-6 -mt-1.5 hover:bg-white hover:text-blue-600"
+              >
+                Login
+                {showLogin && <Login />}
               </li>
+
+              {/* For CloseClickLogin */}
+              {showLogin && (
+                <img src="close2.png" alt="" onClick={handleLoginCloseclick}
+                  className="btn1 z-20 absolute right-[515px] top-[210px] cursor-pointer opacity-30 hover:opacity-80"/>
+              )}
+
               <li className="cursor-pointer">Become Seller</li>
               <li className="flex">
-                <label htmlFor=".btn2" className="cursor-pointer">More</label>
+                <label htmlFor=".btn2" className="cursor-pointer">
+                  More
+                </label>
                 <svg
                   className="btn2 mt-2.5 ml-2 -rotate-90 hover:rotate-90 cursor-pointer"
                   width="4.7"
@@ -96,7 +150,9 @@ const Nav = () => {
                       fill="#fff"
                     ></path>
                   </svg>
-                  <label htmlFor="" className="cursor-pointer mt-10.5">Cart</label>
+                  <label htmlFor="" className="cursor-pointer mt-10.5">
+                    Cart
+                  </label>
                 </a>
               </li>
             </ul>

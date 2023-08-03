@@ -1,6 +1,6 @@
-import React from "react";
+// import React from "react";
 
-const CartCard = (baby) => {
+const CartCard = (item  ) => {
   return (
     <div className="border border-gray-200">
       <style>
@@ -14,13 +14,13 @@ const CartCard = (baby) => {
       <div className="wrapper w-auto m-5 flex p-5 text-left">
         <div
           className="w-52 bg-cover h-24"
-          style={{ backgroundImage: `url(${baby.data.image})` }}
+          style={{ backgroundImage: `url(${item.data.image})` }}
         ></div>
 
         <div className=" w-full px-5">
-          <h6 className="font-bold">{baby.data.name}</h6>
-          <h6 className="text-gray-400 ">{baby.data.details}</h6>
-          <h6 className="font-bold text-sm">{baby.data.price}</h6>
+          <h6 className="font-bold">{item.data.name}</h6>
+          <h6 className="text-gray-400 ">{item.data.details}</h6>
+          <h6 className="font-bold text-sm">{item.data.price}</h6>
         </div>
       </div>
       <div className="btn__wrapper gap-6 -mt-10 w-auto m-5 flex p-5 text-left">
@@ -50,13 +50,13 @@ const CartCard = (baby) => {
     //   <div className="wrapper w-auto m-5 flex p-5 text-left">
     //     <div
     //       className="w-52 bg-cover h-24"
-    //       style={{ backgroundImage: `url(${baby.data[0].image})` }}
+    //       style={{ backgroundImage: `url(${item.data[0].image})` }}
     //     ></div>
 
     //     <div className=" w-full px-5">
-    //       <h6 className="font-bold">{baby.data[0].name}</h6>
-    //       <h6 className="text-gray-400 ">{baby.data[0].details}</h6>
-    //       <h6 className="font-bold text-sm">{baby.data[0].price}</h6>
+    //       <h6 className="font-bold">{item.data[0].name}</h6>
+    //       <h6 className="text-gray-400 ">{item.data[0].details}</h6>
+    //       <h6 className="font-bold text-sm">{item.data[0].price}</h6>
     //     </div>
     //   </div>
     //   <div className="btn__wrapper gap-6 -mt-10 w-auto m-5 flex p-5 text-left">

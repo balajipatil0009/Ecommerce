@@ -24,7 +24,7 @@ const Home = () => {
   });
 
   return (
-    <div className="max-w-screen flex flex-col gap-3">
+    <div className="home max-w-screen flex flex-col gap-3">
       <div className="h-14">
         <Nav />
       </div>
