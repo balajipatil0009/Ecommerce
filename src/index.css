@@ -10,7 +10,7 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,5 +20,3 @@
   justify-content: center;
   /* border: 2px solid red; */
 }
-
-

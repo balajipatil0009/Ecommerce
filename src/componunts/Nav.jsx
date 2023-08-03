@@ -10,9 +10,13 @@ const Nav = () => {
               alt=""
             />
             <a href="#" className="text-[14px] italic text-slate-400 flex">
-              Explore 
+              Explore
               <span>Plus</span>
-              <img width="10" className="h-3 mt-1 ml-0.5" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"></img>
+              <img
+                width="10"
+                className="h-3 mt-1 ml-0.5"
+                src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+              ></img>
             </a>
           </div>
 
