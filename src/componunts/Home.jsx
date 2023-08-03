@@ -1,5 +1,6 @@
 import data from "../assets/images.json";
 import HorizantalCard from "./HorizantalCard";
+import Nav from "./Nav";
 
 // To store card data from json file
 const Home = () => {
@@ -24,14 +25,16 @@ const Home = () => {
 
   return (
     <div className="max-w-screen flex flex-col gap-3">
+      <Nav/>
+
       <HorizantalCard data={baby} />
       <HorizantalCard data={electric} />
-      {/* <HorizantalCard data={electric} />
       <HorizantalCard data={electric} />
       <HorizantalCard data={electric} />
       <HorizantalCard data={electric} />
       <HorizantalCard data={electric} />
-      <HorizantalCard data={electric} /> */}
+      <HorizantalCard data={electric} />
+      <HorizantalCard data={electric} />
     </div>
   );
 };
