@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
-import './ProductCard.css'
 
 export const ProductCard = ({ product }) => {
   const settings = {
@@ -12,8 +11,25 @@ export const ProductCard = ({ product }) => {
     slidesToShow: 4,
     slidesToScroll: 1,
   };
+
+
   return (
     <>
+
+      <style>
+        {`
+          .slick-arrow::before {
+            background-color: rgb(146, 139, 139);
+            border-radius: 16px;
+          }
+
+          .slick-prev::before {
+            background-color: rgb(0, 0, 0);
+            border-radius: 16px;
+          }
+        `}
+      </style>
+
       <Slider {...settings} className="w-[80%]">
         {product.map((item, index) => (
           <div

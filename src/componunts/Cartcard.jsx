@@ -2,7 +2,15 @@ import React from "react";
 
 const CartCard = (baby) => {
   return (
-    <>
+    <div className="border border-gray-200">
+      <style>
+        {`
+          .btn1{
+            transition: all ease 0.8s;
+          }
+        `}
+      </style>
+
       <div className="wrapper w-auto m-5 flex p-5 text-left">
         <div
           className="w-52 bg-cover h-24"
@@ -17,18 +25,26 @@ const CartCard = (baby) => {
       </div>
       <div className="btn__wrapper gap-6 -mt-10 w-auto m-5 flex p-5 text-left">
         <div className="count flex gap-2 ">
-          <div className="border-gray-600 border-2 p-2 rounded-full"><hr className="w-2.5 mt-3 border-gray-600"/></div>
+          <div className="border-gray-600 border-2 p-2 rounded-full">
+            <hr className="w-2.5 mt-3 border-gray-600" />
+          </div>
           <div className="mt-1 py-1 border-2 px-5 border-grey">1</div>
           <div className="border-gray-600 border-2 p-2 rounded-full">+</div>
         </div>
 
-        <button className="btn1 font-bold bg-white p-2.5 ml-3  hover:border-grey hover:bg-slate-700 hover:p-2">Save for later</button>
+        <button className="btn1 font-bold bg-white p-2.5 ml-3  hover:border-grey hover:bg-slate-700">
+          Save for later
+        </button>
 
-        <button className="btn1 font-bold p-2.7 
-         ml-3 bg-white hover:border-grey hover:bg-slate-700 hover:p-3 hover:pr-5">Remove</button>
+        <button
+          className="btn1 font-bold p-2.5 
+         ml-3 bg-white hover:border-grey hover:bg-slate-700 "
+        >
+          Remove
+        </button>
       </div>
       <hr className="border-2 border-grey-800"></hr>
-    </>
+    </div>
 
     // <>
     //   <div className="wrapper w-auto m-5 flex p-5 text-left">
@@ -52,7 +68,7 @@ const CartCard = (baby) => {
 
     //     <button className="btn1 font-bold bg-white p-2.5 ml-3  hover:border-grey hover:bg-slate-700 hover:p-2">Save for later</button>
 
-    //     <button className="btn1 font-bold p-2.7 
+    //     <button className="btn1 font-bold p-2.7
     //      ml-3 bg-white hover:border-grey hover:bg-slate-700 hover:p-3 hover:pr-5">Remove</button>
     //   </div>
     //   <hr className="border-2 border-grey-800"></hr>

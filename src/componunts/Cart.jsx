@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import cartItem from "../assets/images.json";
 import Cartcard from "./Cartcard";
 
-import "../componunts/CartCard.css";
 
 function Cart() {
   const baby = [];
@@ -42,6 +41,20 @@ function Cart() {
 
   return (
     <>
+          <style>
+        {`
+          .slick-arrow::before {
+            background-color: rgb(146, 139, 139);
+            border-radius: 16px;
+          }
+
+          .slick-prev::before {
+            background-color: rgb(0, 0, 0);
+            border-radius: 16px;
+          }
+        `}
+      </style>
+
       <Cartcard data = { cartData }></Cartcard>
       {/* <Cartcard data = { baby }></Cartcard> */}
       {/* <Cartcard data = { electric }></Cartcard> */}
