@@ -25,7 +25,9 @@ const Home = () => {
 
   return (
     <div className="max-w-screen flex flex-col gap-3">
-      <Nav/>
+      <div className="h-14">
+        <Nav />
+      </div>
 
       <HorizantalCard data={baby} />
       <HorizantalCard data={electric} />
