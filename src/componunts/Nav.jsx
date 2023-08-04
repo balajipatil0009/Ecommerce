@@ -9,35 +9,37 @@ const Nav = () => {
   const [isBlurred, setIsBlurred] = useState(false);
 
   const handleLoginClick = () => {
-    flag=true;
+    flag = true;
     setShowLogin(true);
     setIsBlurred(!isBlurred);
   };
 
   const handleLoginCloseclick = () => {
-    flag=false;
+    flag = false;
     setShowLogin(false);
     setIsBlurred(false);
   };
 
   const combinedClickHandler = () => {
-    if(flag == false){
+    if (flag == false) {
       handleLoginClick();
-    }
-    else{
+    } else {
       handleLoginCloseclick();
     }
   };
 
   useEffect(() => {
-    const parentElement = document.querySelector('.home');
-    const childElement = document.querySelector('.nav');
+    const rootElement = document.querySelector("#root");
+    const parentElement = document.querySelector(".home");
+    const childElement = document.querySelector(".nav");
     if (isBlurred) {
-      parentElement.classList.add('blur-background');
-      childElement.classList.add('blur');
+      parentElement.classList.add("blur-background");
+      childElement.classList.add("blur");
+      rootElement.classList.add("scroll");
 
     } else {
-      parentElement.classList.remove('blur-background');
+      parentElement.classList.remove("blur-background");
+      rootElement.classList.remove("scroll");
     }
   }, [isBlurred]);
 
@@ -60,6 +62,11 @@ const Nav = () => {
 
           .blur{
             filter: none;
+          }
+
+          .scroll{
+            left:15px;
+            position:fixed;
           }
 
         `}
@@ -122,16 +129,18 @@ const Nav = () => {
                 Login
               </li>
 
-              <li>
-                {showLogin && <Login />}
-              </li>
+              <li>{showLogin && <Login />}</li>
 
               <li>
-              {/* For CloseClickLogin */}
-              {showLogin && (
-                <img src="close2.png" alt="" onClick={handleLoginCloseclick}
-                  className="btn1 z-20 absolute right-[515px] top-[210px] cursor-pointer opacity-30 hover:opacity-80"/>
-              )}
+                {/* For CloseClickLogin */}
+                {showLogin && (
+                  <img
+                    src="close2.png"
+                    alt=""
+                    onClick={handleLoginCloseclick}
+                    className="btn1 z-20 absolute right-[515px] top-[210px] cursor-pointer opacity-30 hover:opacity-80"
+                  />
+                )}
               </li>
 
               <li className="cursor-pointer">Become Seller</li>
