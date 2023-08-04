@@ -24,19 +24,20 @@ const Home = () => {
   });
 
   return (
-    <div className="home max-w-screen flex flex-col gap-3">
+    <div>
       <div className="h-14">
         <Nav />
       </div>
-
-      <HorizantalCard data={baby} />
-      <HorizantalCard data={electric} />
-      <HorizantalCard data={electric} />
-      <HorizantalCard data={electric} />
-      <HorizantalCard data={electric} />
-      <HorizantalCard data={electric} />
-      <HorizantalCard data={electric} />
-      <HorizantalCard data={electric} />
+      <div className="home max-w-screen flex flex-col gap-3 mt-4">
+        <HorizantalCard data={baby} />
+        <HorizantalCard data={electric} />
+        <HorizantalCard data={electric} />
+        <HorizantalCard data={electric} />
+        <HorizantalCard data={electric} />
+        <HorizantalCard data={electric} />
+        <HorizantalCard data={electric} />
+        <HorizantalCard data={electric} />
+      </div>
     </div>
   );
 };

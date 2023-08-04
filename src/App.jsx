@@ -2,7 +2,6 @@ import './App.css'
 import Home from './componunts/Home';
 import Cart from './componunts/Cart';
 import { createBrowserRouter, RouterProvider} from "react-router-dom"
-import Login from './componunts/Login';
 
 // Url's for pages
 function App() {

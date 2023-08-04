@@ -2,32 +2,44 @@ import React, { useState, useEffect } from "react";
 
 import Login from "./Login";
 
+let flag = false;
+
 const Nav = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [isBlurred, setIsBlurred] = useState(false);
 
   const handleLoginClick = () => {
+    flag=true;
     setShowLogin(true);
     setIsBlurred(!isBlurred);
-
-    // const parentElement = document.querySelector(".home");
-    // parentElement.classList.toggle("blur-background");
   };
 
   const handleLoginCloseclick = () => {
+    flag=false;
     setShowLogin(false);
     setIsBlurred(false);
-
   };
 
-  // useEffect(() => {
-  //   const parentElement = document.querySelector('.home');
-  //   if (isBlurred) {
-  //     parentElement.classList.add('blur-background');
-  //   } else {
-  //     parentElement.classList.remove('blur-background');
-  //   }
-  // }, [isBlurred]);
+  const combinedClickHandler = () => {
+    if(flag == false){
+      handleLoginClick();
+    }
+    else{
+      handleLoginCloseclick();
+    }
+  };
+
+  useEffect(() => {
+    const parentElement = document.querySelector('.home');
+    const childElement = document.querySelector('.nav');
+    if (isBlurred) {
+      parentElement.classList.add('blur-background');
+      childElement.classList.add('blur');
+
+    } else {
+      parentElement.classList.remove('blur-background');
+    }
+  }, [isBlurred]);
 
   return (
     <>
@@ -42,13 +54,12 @@ const Nav = () => {
           }
 
           .blur-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            filter: blur(5px); /* Adjust the blur amount as needed */
-            opacity: 0.7; /* Adjust the opacity to control the blur effect */
+            filter: blur(2px);
+            opacity: 0.7;
+          }
+
+          .blur{
+            filter: none;
           }
 
         `}
@@ -105,22 +116,27 @@ const Nav = () => {
             <ul className="flex gap-4 mt-6 mr-8 text-cyan-50">
               {/* For ClickLogin */}
               <li
-                onClick={handleLoginClick}
+                onClick={combinedClickHandler}
                 className="btn1 font-semibold cursor-pointer border-2 p-1 px-6 -mt-1.5 hover:bg-white hover:text-blue-600"
               >
                 Login
+              </li>
+
+              <li>
                 {showLogin && <Login />}
               </li>
 
+              <li>
               {/* For CloseClickLogin */}
               {showLogin && (
                 <img src="close2.png" alt="" onClick={handleLoginCloseclick}
                   className="btn1 z-20 absolute right-[515px] top-[210px] cursor-pointer opacity-30 hover:opacity-80"/>
               )}
+              </li>
 
               <li className="cursor-pointer">Become Seller</li>
               <li className="flex">
-                <label htmlFor=".btn2" className="cursor-pointer">
+                <label htmlFor="" className="cursor-pointer">
                   More
                 </label>
                 <svg
@@ -150,7 +166,7 @@ const Nav = () => {
                       fill="#fff"
                     ></path>
                   </svg>
-                  <label htmlFor="" className="cursor-pointer mt-10.5">
+                  <label htmlFor="" className="cursor-pointer ">
                     Cart
                   </label>
                 </a>
