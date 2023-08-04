@@ -1,6 +1,6 @@
 // import React from "react";
 
-const CartCard = (item  ) => {
+const CartCard = ( item  ) => {
   return (
     <div className="border border-gray-200">
       <style>
