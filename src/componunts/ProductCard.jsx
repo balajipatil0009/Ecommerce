@@ -31,17 +31,20 @@ export const ProductCard = ({ product, card }) => {
 
           .slick-next::before{
             margin-left:-60px !important;
-            
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 12px;
           }
 
           .slick-prev::before {
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 12px;
             margin-left:25px !important;
           }
 
         `}
       </style>
 
-      <Slider {...card} className={` ${width} border-2 border-gray-300`}>
+      <Slider {...card} className={` ${width} border  border-gray-200`}>
       {/* <Slider {...card} className=" w-[80%]"> */}
         {product.map((item, index) => (
           <div
@@ -49,7 +52,7 @@ export const ProductCard = ({ product, card }) => {
             className="grid h-72 w-52 bg-white text-black grid-rows-3 py-3 px-4 border-2"
           >
             <div
-              className="border border-black  bg-center bg-cover h-36 mb-6"
+              className="border border-black bg-center bg-cover h-36 mb-6"
               style={{ backgroundImage: `url(${item.image})` }}
             ></div>
             <div>
