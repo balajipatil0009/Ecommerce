@@ -4,16 +4,15 @@ import Slider from "react-slick";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
-export const ProductCard = ({ product, card }) => {
+export const ProductCard = ({ product}) => {
 
-  let width;
-
-  if(card.autoplay == true){
-    width = "w-[100%]";
-  }
-  else{
-    width = "w-[80%]";
-  }
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+  }; 
 
   return (
     <>
@@ -44,8 +43,7 @@ export const ProductCard = ({ product, card }) => {
         `}
       </style>
 
-      <Slider {...card} className={` ${width} border  border-gray-200`}>
-      {/* <Slider {...card} className=" w-[80%]"> */}
+      <Slider {...settings} className=" w-[80%]">
         {product.map((item, index) => (
           <div
             key={index}
