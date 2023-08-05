@@ -6,24 +6,43 @@ import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
 export const ProductCard = ({ product, card }) => {
 
+  let width;
+
+  if(card.autoplay == true){
+    width = "w-[100%]";
+  }
+  else{
+    width = "w-[80%]";
+  }
+
   return (
     <>
 
       <style>
         {`
           .slick-arrow::before {
-            background-color: rgb(146, 139, 139);
-            border-radius: 16px;
+            background-color: grey !important;
+            padding:20px 5px;
+            opacity:1 !important;
+          }
+          button{
+            z-index:40;
+          }
+
+          .slick-next::before{
+            margin-left:-60px !important;
+            
           }
 
           .slick-prev::before {
-            background-color: rgb(0, 0, 0);
-            border-radius: 16px;
+            margin-left:25px !important;
           }
+
         `}
       </style>
 
-      <Slider {...card} className="w-[80%]">
+      <Slider {...card} className={` ${width} border-2 border-gray-300`}>
+      {/* <Slider {...card} className=" w-[80%]"> */}
         {product.map((item, index) => (
           <div
             key={index}
