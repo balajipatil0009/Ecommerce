@@ -1,18 +1,10 @@
 /* eslint-disable react/prop-types */
-import React from "react";
+// import React from "react";
 import Slider from "react-slick";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
-export const ProductCard = ({ product }) => {
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-  };
-
+export const ProductCard = ({ product, card }) => {
 
   return (
     <>
@@ -31,7 +23,7 @@ export const ProductCard = ({ product }) => {
         `}
       </style>
 
-      <Slider {...settings} className="w-[80%]">
+      <Slider {...card} className="w-[80%]">
         {product.map((item, index) => (
           <div
             key={index}

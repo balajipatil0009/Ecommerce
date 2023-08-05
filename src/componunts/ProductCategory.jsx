@@ -1,12 +1,7 @@
 const ProductCategory = () => {
   return (
     <>
-      <style>
-        {`
-        
-        `}
-      </style>
-      
+
       <div className=" p-2 flex justify-center w-full">
         <div>
           <a href="#">
@@ -74,7 +69,7 @@ const ProductCategory = () => {
               className="mx-8 w-16"
               loading="lazy"
               alt="Fashion"
-              src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/d0e73939aba7e8ac.png?q=100"
+              src="https://rukminim2.flixcart.com/fk-p-flap/128/128/image/30908d3ff8d0d128.png?q=100"
             ></img>
             <h4 className="font-medium text-sm">Beauty</h4>
           </a>
