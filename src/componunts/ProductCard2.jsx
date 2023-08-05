@@ -23,7 +23,7 @@ export const ProductCard2 = ({ product}) => {
         {product.map((item, index) => (
           <div
             key={index}
-            className="grid h-72 w-52 bg-white text-black grid-rows-3 py-3 px-4 border-2"
+            className="h-72 w-52 border-2 border-b-0"
           >
             <div
               className=" bg-center bg-cover h-full"
