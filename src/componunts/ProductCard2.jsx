@@ -19,7 +19,7 @@ export const ProductCard2 = ({ product}) => {
   return (
     <>
 
-      <Slider {...settings} className=" w-[100%]">
+      <Slider {...settings} className="w-[100%]">
         {product.map((item, index) => (
           <div
             key={index}

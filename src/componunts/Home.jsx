@@ -45,11 +45,7 @@ const Home = () => {
         <ProductCard2 product={cards} />
 
         <HorizantalCard data={electric} />
-        <HorizantalCard data={electric}/>
-        <HorizantalCard data={electric}/>
-        <HorizantalCard data={electric}/>
-        <HorizantalCard data={electric}/>
-        <HorizantalCard data={electric}/>
+
         </div>
       </div>
     </div>

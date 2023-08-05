@@ -40,26 +40,33 @@ export const ProductCard = ({ product}) => {
             margin-left:25px !important;
           }
 
+          // .btn1{
+          //   transition:all ease-out 0.8s;
+          // }
+
         `}
       </style>
 
-      <Slider {...settings} className=" w-[80%]">
+      <Slider {...settings} className=" w-[70%] flex ">
         {product.map((item, index) => (
           <div
             key={index}
-            className="grid h-72 w-52 bg-white text-black grid-rows-3 py-3 px-4 border-2"
+            className=" h-[368px] w-52 bg-white"
           >
+
             <div
-              className="border border-black bg-center bg-cover h-36 mb-6"
+              className="btn1 bg-no-repeat bg-center mt-6 h-[60%] w-full hover:h-[70%] hover:-mt-2"
               style={{ backgroundImage: `url(${item.image})` }}
             ></div>
-            <div>
+
+            <div className="mt-2">
               <h6 className=" font-bold text-xs">{item.name}</h6>
               <h6 className="text-green-600 text-sm mt-2">
-                price {item.price}
+                from {item.price}
               </h6>
               <h6 className="text-gray-400 text-sm ">{item.details}</h6>
             </div>
+
           </div>
         ))}
       </Slider>
