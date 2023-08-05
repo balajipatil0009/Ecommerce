@@ -9,7 +9,8 @@ const Login = ()=>{
 
             <div className="flex flex-col p-8 gap-4 ">
 
-                <input className="border-none" type="text" placeholder="Enter Email/Mobile Number" />
+                <input className="border-none placeholder:text-slate-400 focus:border-none outline-none  focus:text-slate-400" type="text" placeholder="Enter Email/Mobile Number"
+                autoComplete="off"/>
                 <hr className="border -mt-2.5"/>
 
                 <span className="text-left mt-8 text-sm text-slate-400">By continuing, you agree to Flipkart's <span className="text-blue-600">Terms of Use</span> and <span className="text-blue-600">Privacy Policy.</span> </span>
