@@ -138,7 +138,7 @@ const Nav = () => {
                     src="close2.png"
                     alt=""
                     onClick={handleLoginCloseclick}
-                    className="btn1 z-20 absolute right-[515px] top-[210px] cursor-pointer opacity-30 hover:opacity-80"
+                    className="btn1 z-20 absolute right-[490px] top-[210px] cursor-pointer opacity-30 hover:opacity-80"
                   />
                 )}
               </li>
