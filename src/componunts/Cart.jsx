@@ -67,8 +67,8 @@ function Cart() {
       </div>
 
       <div>
-        <div className="border-2  h-fit mx-8 mt-2 w-[500px]">
-          <p className="border-b p-4">Price Details</p>
+        <div className="border-2  h-fit mx-8 mt-2 w-[500px] text-left">
+          <p className="border-b p-4 font-semibold text-slate-500 font-sans">PRICE DETAILS</p>
 
           <div>
             <div className="p-4 flex justify-between">
@@ -76,22 +76,22 @@ function Cart() {
               <p>₹2,159</p>
             </div>
             <div className="p-4 flex justify-between">
-              <p>Price (4 items)</p>
-              <p>₹2,159</p>
+              <p>Discount</p>
+              <p className="text-green-600">− ₹1,262</p>
             </div>
             <div className="p-4 flex justify-between">
-              <p>Price (4 items)</p>
-              <p>₹2,159</p>
+              <p>Sale Fee</p>
+              <p>₹10</p>
             </div>
             <div className="p-4 flex justify-between ">
-              <p>Price (4 items)</p>
-              <p>₹2,159</p>
+              <p>Delivery Charges</p>
+              <p>₹98</p>
             </div>
 
             <div className="border-b-2 border-dotted"></div>
             <div className="p-4 flex justify-between text-lg font-semibold text-slate-800">
               <p>Total Amounts</p>
-              <p>₹2,159</p>
+              <p>₹1,005</p>
             </div>
             <div className="border-b-2 border-dotted"></div>
 
