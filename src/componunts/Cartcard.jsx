@@ -1,6 +1,6 @@
 // import React from "react";
 
-const CartCard = ( item  ) => {
+const CartCard = (item) => {
   return (
     <div className="border border-gray-200">
       <style>
@@ -11,18 +11,23 @@ const CartCard = ( item  ) => {
         `}
       </style>
 
-      <div className="wrapper w-auto m-5 flex p-5 text-left">
+      <div className="wrapper w-full m-5 flex p-5 text-left">
         <div
-          className="w-52 bg-cover h-24"
+          className="w-36 h-36 bg-contain bg-no-repeat"
           style={{ backgroundImage: `url(${item.data.image})` }}
         ></div>
 
         <div className=" w-full px-5">
           <h6 className="font-bold">{item.data.name}</h6>
           <h6 className="text-gray-400 ">{item.data.details}</h6>
-          <h6 className="font-bold text-sm">{item.data.price}</h6>
+          <h6 className="font-bold text-md mt-4">{item.data.price.p}</h6>
+        </div>
+
+        <div>
+          <h6 className="text-gray-400 w-[250px] ">{item.data.delivery}</h6>
         </div>
       </div>
+
       <div className="btn__wrapper gap-6 -mt-10 w-auto m-5 flex p-5 text-left">
         <div className="count flex gap-2 ">
           <div className="border-gray-600 border-2 p-2 rounded-full">
@@ -44,8 +49,8 @@ const CartCard = ( item  ) => {
         </button>
       </div>
       <hr className="border-2 border-grey-800"></hr>
-    </div>
 
+      {/* 
     // <>
     //   <div className="wrapper w-auto m-5 flex p-5 text-left">
     //     <div
@@ -72,7 +77,8 @@ const CartCard = ( item  ) => {
     //      ml-3 bg-white hover:border-grey hover:bg-slate-700 hover:p-3 hover:pr-5">Remove</button>
     //   </div>
     //   <hr className="border-2 border-grey-800"></hr>
-    // </>
+    // </> */}
+    </div>
   );
 };
 

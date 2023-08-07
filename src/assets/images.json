@@ -26,48 +26,54 @@
       "catagary":"electric",
       "image":"https://rukminim2.flixcart.com/image/200/200/xif0q/mobile/z/x/x/-original-imagp55frhhddu6n.jpeg?q=70",
       "name":"Realme C55",
-      "price":"10,499",
-      "details": "6.72' 120Hz FHD+ Display"
+      "price":{
+        "p":"₹10,499"
+      },
+      "details": "6.72' 120Hz FHD+ Display",
+      "delivery":"Delivery by Sun Aug 13 | ₹44"
     }
     ,{
       "id":"s2",
       "catagary":"electric",
       "image":"https://rukminim2.flixcart.com/image/200/200/xif0q/mobile/n/v/2/-original-imagmkjfjwtzhaag.jpeg?q=70",
       "name":"Realme C55",
-      "price":"10,499",
-      "details": "6.72' 120Hz FHD+ Display"
+      "price":"₹10,499",
+      "details": "6.72' 120Hz FHD+ Display",
+      "delivery":"Delivery by Sun Aug 13 | ₹44"
     }
     ,{
       "id":"s2",
       "catagary":"electric",
       "image":"https://rukminim2.flixcart.com/image/200/200/xif0q/refrigerator-new/4/c/u/-original-imagqujvfuc4k4yt.jpeg?q=70",
       "name":"Realme C55",
-      "price":"10,499",
-      "details": "6.72' 120Hz FHD+ Display"
+      "price":"₹10,499",
+      "details": "6.72' 120Hz FHD+ Display",
+      "delivery":"Delivery by Sun Aug 13 | ₹44"
     }
     ,{
       "id":"s2",
       "catagary":"electric",
       "image":"https://rukminim2.flixcart.com/image/200/200/xif0q/mobile/u/1/h/-original-imagpfbvfu4p55n4.jpeg?q=70",
       "name":"Realme C55",
-      "price":"10,499",
-      "details": "6.72' 120Hz FHD+ Display"
+      "price":"₹10,499",
+      "details": "6.72' 120Hz FHD+ Display",
+      "delivery":"Delivery by Sun Aug 13 | ₹44"
     }
     ,{
-      "id":"s2",
       "catagary":"electric",
       "image":"https://rukminim2.flixcart.com/image/200/200/k01b8280/acoustic-guitar/t/f/a/rvl-38c-lgp-bk-revel-original-imafjx6hmdg9vczz.jpeg?q=70",
       "name":"Realme C55",
-      "price":"10,499",
-      "details": "6.72' 120Hz FHD+ Display"
+      "price":"₹10,499",
+      "details": "6.72' 120Hz FHD+ Display",
+      "delivery":"Delivery by Sun Aug 13 | ₹44"
     }
     ,{
-      "id":"s2",
       "catagary":"electric",
       "image":"https://rukminim2.flixcart.com/image/200/200/ktketu80/mobile/6/n/d/iphone-13-mlpg3hn-a-apple-original-imag6vpyghayhhrh.jpeg?q=70",
       "name":"Realme C55",
-      "price":"10,499",
-      "details": "6.72' 120Hz FHD+ Display"
+      "price":"₹10,499",
+      "details": "6.72' 120Hz FHD+ Display",
+      "delivery":"Delivery by Sun Aug 13 | ₹44"
     },
 
 
