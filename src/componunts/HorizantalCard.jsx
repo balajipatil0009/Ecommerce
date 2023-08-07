@@ -12,7 +12,7 @@ const HorizantalCard = ({ data }) => {
     <>
       <div className="flex justify-center flex-auto w-full border-2">
         <div style={style} className="w-full">
-          <h1 className="my-9 text-lg text-slate-700 font-semibold ">
+          <h1 className="my-12 text-lg text-slate-700 font-semibold ">
             Top Offers
           </h1>
           <a href="#" className="p-3 bg-slate-700">

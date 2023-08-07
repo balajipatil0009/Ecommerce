@@ -4,6 +4,7 @@ import Nav from "./Nav";
 import ProductCategory from "./ProductCategory";
 import { ProductCard2 } from "./ProductCard2";
 import ProductCard3 from "./Productcard3";
+import Description from "./Description";
 
 // To store card data from json file
 const Home = () => {
@@ -44,6 +45,7 @@ const Home = () => {
           <ProductCard2 product={cards} />
           <HorizantalCard data={electric} />
           <ProductCard3/>
+          <Description />
         </div>
 
       </div>
