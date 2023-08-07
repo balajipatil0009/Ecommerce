@@ -47,7 +47,7 @@ export const ProductCard = ({ product}) => {
         `}
       </style>
 
-      <Slider {...settings} className=" w-[70%] flex ">
+      <Slider {...settings} className=" w-[70%] flex border ">
         {product.map((item, index) => (
           <div
             key={index}

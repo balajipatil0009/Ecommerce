@@ -3,8 +3,7 @@ import HorizantalCard from "./HorizantalCard";
 import Nav from "./Nav";
 import ProductCategory from "./ProductCategory";
 import { ProductCard2 } from "./ProductCard2";
-
-
+import ProductCard3 from "./Productcard3";
 
 // To store card data from json file
 const Home = () => {
@@ -39,14 +38,14 @@ const Home = () => {
       </div>
 
       <div className="home -mx-4">
-          <ProductCategory />
+        <ProductCategory />
 
-        <div className="max-w-screen flex flex-col gap-3 p-2 bg-slate-100 border-t-2">
-        <ProductCard2 product={cards} />
-
-        <HorizantalCard data={electric} />
-
+        <div className="max-w-screen flex flex-col gap-3 p-2 bg-slate-100 border-t-2 ">
+          <ProductCard2 product={cards} />
+          <HorizantalCard data={electric} />
+          <ProductCard3/>
         </div>
+
       </div>
     </div>
   );

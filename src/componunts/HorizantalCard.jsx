@@ -10,7 +10,7 @@ const style = {
 const HorizantalCard = ({ data }) => {
   return (
     <>
-      <div className="flex justify-center flex-auto w-full ">
+      <div className="flex justify-center flex-auto w-full border-2">
         <div style={style} className="w-full">
           <h1 className="my-9 text-lg text-slate-700 font-semibold ">
             Top Offers
