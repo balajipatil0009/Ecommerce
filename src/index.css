@@ -11,8 +11,5 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  /* border: 2px solid red; */
+  overflow-x: hidden;
 }
