@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 const Description = () => {
   return (
-    <div className="text-left text-slate-500 text-sm">
+    <div className="text-left text-slate-500 text-sm p-4">
       <p>
         Top stories: <span className="font-semibold ">Brand Directory</span>
         <br /> <br />

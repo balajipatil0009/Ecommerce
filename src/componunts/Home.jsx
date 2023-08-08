@@ -5,6 +5,7 @@ import ProductCategory from "./ProductCategory";
 import { ProductCard2 } from "./ProductCard2";
 import ProductCard3 from "./Productcard3";
 import Description from "./Description";
+import Footer from "./Footer";
 
 // To store card data from json file
 const Home = () => {
@@ -47,6 +48,8 @@ const Home = () => {
           <ProductCard3/>
           <Description />
         </div>
+
+        <Footer/>
 
       </div>
     </div>

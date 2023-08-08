@@ -19,16 +19,14 @@
       "image":"c4.png",
       "catagary":"cards",
       "id":"s3"
-    }
+    },
 
-    ,{
+    {
       "id":"s2",
       "catagary":"electric",
-      "image":"https://rukminim2.flixcart.com/image/200/200/xif0q/mobile/z/x/x/-original-imagp55frhhddu6n.jpeg?q=70",
+      "image":"https://rukminim2.flixcart.com/image/200/200/xif0q/mobile/n/v/2/-original-imagmkjfjwtzhaag.jpeg?q=70",
       "name":"Realme C55",
-      "price":{
-        "p":"₹10,499"
-      },
+      "price":"₹10,499",
       "details": "6.72' 120Hz FHD+ Display",
       "delivery":"Delivery by Sun Aug 13 | ₹44"
     }

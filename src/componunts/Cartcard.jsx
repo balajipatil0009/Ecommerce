@@ -20,7 +20,7 @@ const CartCard = (item) => {
         <div className=" w-full px-5">
           <h6 className="font-bold">{item.data.name}</h6>
           <h6 className="text-gray-400 ">{item.data.details}</h6>
-          <h6 className="font-bold text-md mt-4">{item.data.price.p}</h6>
+          <h6 className="font-bold text-md mt-4">{item.data.price}</h6>
         </div>
 
         <div>
