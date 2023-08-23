@@ -13,7 +13,7 @@ const Login = ()=>{
                 autoComplete="off"/>
                 <hr className="border -mt-2.5"/>
 
-                <span className="text-left mt-8 text-sm text-slate-400">By continuing, you agree to Flipkart's <span className="text-blue-600">Terms of Uses</span> and <span className="text-blue-600">Privacy Policy.</span> </span>
+                <span className="text-left mt-8 text-sm text-slate-400">By continuing, you agree to Flipkart's <span className="text-blue-600">Terms of Use</span> and <span className="text-blue-600">Privacy Policy.</span> </span>
 
                 <a href="#" className="border-2 text-white font-medium bg-orange-500 p-3 text-center w-full m-0">Request OTP</a>
 
