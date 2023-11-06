@@ -5,3 +5,50 @@
   padding: 0px;
   margin-top: 10px;
 }
+
+.c{
+  /* border: 1px solid red; */
+  width: 100vw;  
+}
+
+
+
+/* Media Query For all Resolutions */
+
+@media (min-width: 412px){
+  .c{
+      max-width: 390px;
+  }
+}
+
+@media(min-width:576px) {
+  .c {
+    max-width: 540px;
+  }
+}
+
+@media(min-width:768px){
+  .c{
+    max-width: 720px;
+  }
+}
+
+  @media(min-width:992px){
+    .c{
+      max-width: 960px;
+      margin-right: 1.5rem;
+    }
+
+  } 
+
+  @media(min-width:1200px){
+    .c{
+      max-width: 1152px;
+      margin-left: 2rem;
+    }
+  }
+ @media(min-width:1680px){
+    .c{
+      max-width: 1600px;
+    }
+  }

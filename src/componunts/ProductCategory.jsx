@@ -1,8 +1,7 @@
 const ProductCategory = () => {
   return (
-    <>
 
-      <div className=" p-2 flex justify-center w-full">
+      <div className=" flex justify-center">
         <div>
           <a href="#">
             <img
@@ -124,7 +123,6 @@ const ProductCategory = () => {
         </div>
 
       </div>
-    </>
   );
 };
 

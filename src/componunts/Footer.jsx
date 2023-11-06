@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="p-4 bg-[#172337] text-white ">
+    <div className="p-4 bg-[#172337] text-white mb-1">
       <div className="flex text-left text-xs">
         <ul className="flex-1 p-4 gap-2 flex flex-col">
           <li className="py-2 text-slate-600">ABOUT</li>

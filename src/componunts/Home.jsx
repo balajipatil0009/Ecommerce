@@ -34,15 +34,15 @@ const Home = () => {
   });
 
   return (
-    <div>
+    <div className="c">
       <div className="h-20">
         <Nav />
       </div>
 
-      <div className="home -mx-4">
+      <div className="home mx-8 mr-12">
         <ProductCategory />
 
-        <div className="max-w-screen flex flex-col gap-3 p-2 bg-slate-100 border-t-2 ">
+        <div className="max-w-screen flex flex-col gap-3  bg-slate-100 border-t-2 ">
           <ProductCard2 product={cards} />
           <HorizantalCard data={electric} />
           <ProductCard3/>
